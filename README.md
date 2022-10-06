@@ -2,7 +2,21 @@
 
 You have reached the Github repo for the Peace Speech Project for Fall 2022 Capstone
 
-#### BigScience Group(Yibo Chen & Pinyi Yang, 9/27-10/4):
+## 9/27-10/4
+
+#### Social Media Group (Yuwen Zhang, Ziheng Ru):
+
+  1. Looked into the usage of social media platforms in the 20 countries listed previously; among them, both Reddit and Facebook API do not provide users’ geospatial information
+  2. Applied Twitter Developer API for Academic Research Access: https://developer.twitter.com/en/products/twitter-api/academic-research/application-info
+     * Maximum 10 M Tweets per month
+     * Can fetch user info including: user id/location/followers/tweets/description etc
+     * Can fetch tweet info including: tweet content/time/retweets/replies/likes/quote/tag location
+  3. Fetched around 2 M tweets from 2017-present, maximum 100k tweets per country
+     * Approach: Get tag location of each tweet, if it exists. Select tweets with tag location that’s in the 20 countries list
+     * The complete dataset: https://drive.google.com/file/d/1WfjUgL7eqGj8CP_7rqKTeyQM1NzupRyj/view?usp=sharing
+
+
+#### BigScience Group (Yibo Chen & Pinyi Yang):
 
   ##### Yibo Chen:  
   
