@@ -35,5 +35,5 @@ You have reached the Github repo for the Peace Speech Project for Fall 2022 Caps
    
    ##### Progress by Friday(10/7):
    1. Successfully scraped the news on India,Iran,Finland
-   2. Found new source for [Ireland](https://www.sundayworld.com/archive/cnt),[Nigeria](https://www.thenigerianvoice.com/archive/),[Uganda](https://www.independent.co.ug/all-news/),[Norway](https://www.newsinenglish.no/2022/10/07/),[Zimbabwe](https://bulawayo24.com/index-id-archive.html). However, news source from Zimbabwe is not that good.
+   2. Found new source for [UK](https://www.independent.co.uk/archive),[Canada](https://www.thestar.com/archive.html),[Ireland](https://www.sundayworld.com/archive/cnt),[Nigeria](https://www.thenigerianvoice.com/archive/),[Uganda](https://www.independent.co.ug/all-news/),[Norway](https://www.newsinenglish.no/2022/10/07/),[Zimbabwe](https://bulawayo24.com/index-id-archive.html). However, news source from Zimbabwe is not that good.
    3. Since we have used **fulltext** function from python library [Newspaper3k](https://newspaper.readthedocs.io/en/latest/) , which is pretty powerful, for news scraping, I think their work on [**Stopwords**](https://github.com/codelucas/newspaper/blob/master/newspaper/resources/text/stopwords-en.txt) can be really helpful.
