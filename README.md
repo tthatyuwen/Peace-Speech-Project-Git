@@ -18,22 +18,16 @@ You have reached the Github repo for the Peace Speech Project for Fall 2022 Caps
        https://drive.google.com/file/d/1WfjUgL7eqGj8CP_7rqKTeyQM1NzupRyj/view?usp=sharing
 
 
-#### BigScience Group (Yibo Chen & Pinyi Yang):
-
-  ##### Yibo Chen:  
+#### News Group ( Yibo Chen & Pinyi Yang & Xinfu Su & Hongou Liu): 
   
   ##### Work Summary
-  
-  1. Find out datacards(English Part) start with "pseudocrawl", *eg.pseudocrawl-filtered_667_www_bhaskar_com*,[detailed work](https://github.com/ChenYb9807/ENGI8000/blob/main/Pseudocrawl%20data%20in%20BigScience.py)
-  2. Try to use python library [Newspaper3k](https://newspaper.readthedocs.io/en/latest/) to scrape news text from 16 countries. Not a good idea. [Demo](https://github.com/ChenYb9807/ENGI8000/blob/main/Scraping%20with%20Newspaper3k.py). The library is not that powerful.
-  3. Collect great source for newspaper archive, [India](https://timesofindia.indiatimes.com/archive.cms),[~~Afghanistan~~](https://www.eastview.com/resources/gpa/afghan-central-press/),[Australia,Canada&UK](https://lil.nlp.cornell.edu/newsroom/explore/index.html),[Iran](https://www.tehrantimes.com/archive),[Nigeria](https://archive-it.org/collections/11796),[Sri Lanka](https://www.sundaytimes.lk/210110/archive/),[Finland](https://www.dailyfinland.fi/archive).This can be helpful for better web scraping result.
-  4. BigScience dataset contains many news irrelavant corpus, wiki, and many text in forum website. The most valuable part for our study might be those newspaper in Singapore. *Dataset uid: pseudocrawl-filtered_497_www_straitstimes_com* It's big enough and relevant to our study.
+        1. Collect and Process 5 indexes to build model for identifying high/low peace countries(Pinyi Yang)
+        2. Preprocess news data, find stop words, use xgboost(Xinfu Su), NN(Yibo Chen), bert(Hongou Liu) to model high/low peaceful countries, accuracy range from 0.9-0.98
+        3. Find keywords that indicate peacefulness(Present in meeting)
   
    ##### Future work
-   
-   Successfully crawl data from India by Saturday and communicate with other members doing scraping work, make sure we have access to at least 6 countries newspapers by Tuesday.
-   
-   ##### Progress by Friday(10/7):
-   1. Successfully scraped the news on India,Iran,Finland
-   2. Found new source for [UK](https://www.independent.co.uk/archive),[Canada](https://www.thestar.com/archive.html),[Ireland](https://www.sundayworld.com/archive/cnt),[Nigeria](https://www.thenigerianvoice.com/archive/),[Uganda](https://www.independent.co.ug/all-news/),[Norway](https://www.newsinenglish.no/2022/10/07/),[Zimbabwe](https://bulawayo24.com/index-id-archive.html). However, news source from Zimbabwe is not that good.
-   3. Since we have used **fulltext** function from python library [Newspaper3k](https://newspaper.readthedocs.io/en/latest/) , which is pretty powerful, for news scraping, I think their work on [**Stopwords**](https://github.com/codelucas/newspaper/blob/master/newspaper/resources/text/stopwords-en.txt) can be really helpful.
+        1. Find Reason for such high accuracy, improve methods to find keywords.
+
+##### Data Source:
+
+ [India](https://timesofindia.indiatimes.com/archive.cms),[~~Afghanistan~~](https://www.eastview.com/resources/gpa/afghan-central-press/),[Australia,Canada&UK](https://lil.nlp.cornell.edu/newsroom/explore/index.html),[Iran](https://www.tehrantimes.com/archive),[Nigeria](https://archive-it.org/collections/11796),[Sri Lanka](https://www.sundaytimes.lk/210110/archive/),[Finland](https://www.dailyfinland.fi/archive),[UK](https://www.independent.co.uk/archive),[Canada](https://www.thestar.com/archive.html),[Ireland](https://www.sundayworld.com/archive/cnt),[Nigeria](https://www.thenigerianvoice.com/archive/),[Uganda](https://www.independent.co.ug/all-news/),[Norway](https://www.newsinenglish.no/2022/10/07/),[Zimbabwe](https://bulawayo24.com/index-id-archive.html)
