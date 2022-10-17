@@ -19,8 +19,8 @@
 #### News Group ( Yibo Chen & Pinyi Yang & Xinfu Su & Hongou Liu): 
   
   ##### Work Summary
-        1. Collect and Process 5 indexes to build model for identifying high/low peace countries(Pinyi Yang)
-        2. Preprocess news data, find stop words, use xgboost(Xinfu Su), NN(Yibo Chen), bert(Hongou Liu) to model high/low peaceful countries, accuracy range from 0.9-0.98
+        1. Collect and Process 5 indexes to build model for identifying high/low peace countries(Pinyi Yang). 
+        2. Preprocess news data, find stop words, use xgboost(Xinfu Su), NN(Yibo Chen), bert(Hongou Liu), Logistic regression(Pinyi Yang) to model high/low peaceful countries, accuracy range from 0.9-0.98
         3. Find keywords that indicate peacefulness(Present in meeting)
   
    ##### Future work
