@@ -7,7 +7,8 @@
         1. Modify pipeline for tweet processing: Complete regex table for removing country names; Expand contractions in tweets; Convert emoji to text; Apply lemmatization
         2. Apply TfIdf to find the top 200 most unique words in each country
   ##### Future work
-        1. Create model for peace/non-peace prediction
+        1. Repeat the process for a bigger sample of tweets
+        2. Create model for peace/non-peace prediction
         
 <!--   1. Looked into the usage of social media platforms in the 20 countries listed previously; among them, both Reddit and Facebook API do not provide users’ geospatial information
   2. Applied Twitter Developer API for Academic Research Access:
