@@ -3,7 +3,12 @@
 ## 10/11-10/18
 
 #### Social Media Group (Yuwen Zhang, Ziheng Ru):
-
+  ##### Work Summary
+        1. Modify pipeline for tweet processing: Complete regex table for removing country names; Expand contractions in tweets; Convert emoji to text; Apply lemmatization
+        2. Apply TfIdf to find the top 200 most unique words in each country
+  ##### Future work
+        1. Create model for peace/non-peace prediction
+        
 <!--   1. Looked into the usage of social media platforms in the 20 countries listed previously; among them, both Reddit and Facebook API do not provide users’ geospatial information
   2. Applied Twitter Developer API for Academic Research Access:
      https://developer.twitter.com/en/products/twitter-api/academic-research/application-info
@@ -17,7 +22,6 @@
 
 
 #### News Group ( Yibo Chen & Pinyi Yang & Xinfu Su & Hongou Liu): 
-  
   ##### Work Summary
         1. Collect and Process 5 indexes to build model for identifying high/low peace countries(Pinyi Yang). 
         2. Preprocess news data, find stop words, use xgboost(Xinfu Su), NN(Yibo Chen), bert(Hongou Liu), Logistic regression(Pinyi Yang) to model high/low peaceful countries, accuracy range from 0.9-0.98
