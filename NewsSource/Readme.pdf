@@ -1,22 +1,32 @@
 Track data till 2022.9.30
 
-(Countries,news resource,pieces of news) listed below:
+(Countries,pieces of news,news resource) listed below:
 
-Canada,[The star](https://www.thestar.com/archive.html),39875
-Uk,[The Independent](https://www.independent.co.uk/archive),41217
-~~[Sri_lanka,[Sunday Times](https://www.sundaytimes.lk/210110/archive/),5840]~~
-Uganda,[The Independent](https://www.independent.co.ug/all-news/),24007
-Ireland,[Sunday World](https://www.sundayworld.com/archive/cnt),18298
-India,[Times of India](https://timesofindia.indiatimes.com/archive.cms),40260
-Finland,[Daily Finland](https://www.dailyfinland.fi/archive),20525
-Iran,[Tehran Times](https://www.tehrantimes.com/archive),32183
-Nigeria,[The Nigerian Voice](https://www.thenigerianvoice.com/archive/),32200
-Norway,[News in English](https://www.newsinenglish.no/2022/10/07/),20791
-Zimbabwe,[bulawayo24](https://bulawayo24.com/index-id-archive.html)
-Turley, [Daily Sabah](https://www.dailysabah.com/search?query=ARCHIVES&qlimit=by_fifty&pgno=1)
+High Peace country:
+Canada, 39875+16375(Cornell Newsroom), [The star](https://www.thestar.com/archive.html), 
+Uk,41217+42582(Cornell Newsroom),[The Independent](https://www.independent.co.uk/archive)
+√Norway,20791,[News in English](https://www.newsinenglish.no/2022/10/07/)
+√Ireland,18298,[Sunday World](https://www.sundayworld.com/archive/cnt)
+Finland,20525,[Daily Finland](https://www.dailyfinland.fi/archive)
+Singapore,,[The Straits Times](https://www.straitstimes.com/global)
+√Australia(Cornell Newsroom),24599,[9news](https://www.9news.com.au/)
+France,,[France24](https://www.france24.com/en/archives/2021/)
+
+Low Peace country:
+India,40260,[Times of India](https://timesofindia.indiatimes.com/archive.cms)
+√Uganda,28668,[The Independent](https://www.independent.co.ug/all-news/)
+Iran,32183,[Tehran Times](https://www.tehrantimes.com/archive)
+Nigeria,32200,[The Nigerian Voice](https://www.thenigerianvoice.com/archive/)
+√Zimbabwe,124525,[bulawayo24](https://bulawayo24.com/index-id-archive.html)
+Turkey,,[Daily Sabah](https://www.dailysabah.com/search?query=ARCHIVES&qlimit=by_fifty&pgno=1)
+Libya,,[The Libya Observer](https://www.libyaobserver.ly/archive/)
+Pakistan,,[Dawn](https://www.dawn.com/archive/2022-10-17)
 
 For Ireland, we only have access to 2020.1.1-2022.9.30
 
-Future news resources:
+Dataset resources:
 [Australia,Canada&UK](https://lil.nlp.cornell.edu/newsroom/explore/index.html)
-Singapore,(The Straits Times)[https://www.straitstimes.com/global]
+[Singapore](https://huggingface.co/datasets/teven/pseudo_crawl_en_seeds)
+Web Scraping
+
+~~Sri_lanka~~,[Sunday Times](https://www.sundaytimes.lk/210110/archive/),5840
