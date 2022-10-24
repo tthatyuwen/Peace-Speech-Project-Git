@@ -1,17 +1,22 @@
-Track data from 2019.1.1-2022.9.30
+Track data till 2022.9.30
 
-(Countries,pieces of news) listed below:
+(Countries,news resource,pieces of news) listed below:
 
-Canada,39875
-Uk,41217
-Sri_lanka,5840
-Uganda,24007
-Ireland,18298
-India,40260
-Finland,20525
-Iran,32183
-Nigeria,32200
-Norway,20791
+Canada,[The star](https://www.thestar.com/archive.html),39875
+Uk,[The Independent](https://www.independent.co.uk/archive),41217
+~~[Sri_lanka,[Sunday Times](https://www.sundaytimes.lk/210110/archive/),5840]~~
+Uganda,[The Independent](https://www.independent.co.ug/all-news/),24007
+Ireland,[Sunday World](https://www.sundayworld.com/archive/cnt),18298
+India,[Times of India](https://timesofindia.indiatimes.com/archive.cms),40260
+Finland,[Daily Finland](https://www.dailyfinland.fi/archive),20525
+Iran,[Tehran Times](https://www.tehrantimes.com/archive),32183
+Nigeria,[The Nigerian Voice](https://www.thenigerianvoice.com/archive/),32200
+Norway,[News in English](https://www.newsinenglish.no/2022/10/07/),20791
+Zimbabwe,[bulawayo24](https://bulawayo24.com/index-id-archive.html)
+Turley, [Daily Sabah](https://www.dailysabah.com/search?query=ARCHIVES&qlimit=by_fifty&pgno=1)
 
-For Sri Lanka, we selected a weekly newspaper;
 For Ireland, we only have access to 2020.1.1-2022.9.30
+
+Future news resources:
+[Australia,Canada&UK](https://lil.nlp.cornell.edu/newsroom/explore/index.html)
+Singapore,(The Straits Times)[https://www.straitstimes.com/global]
