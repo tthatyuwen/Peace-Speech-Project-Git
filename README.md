@@ -25,13 +25,6 @@
 
 #### News Group ( Yibo Chen & Pinyi Yang & Xinfu Su & Hongou Liu): 
   ##### Work Summary
-        1. Collect and Process 5 indexes to build model for identifying high/low peace countries(Pinyi Yang). 
-        2. Preprocess news data, find stop words, use xgboost(Xinfu Su), NN(Yibo Chen), bert(Hongou Liu), Logistic regression(Pinyi Yang) to model high/low peaceful countries, accuracy range from 0.9-0.98
-        3. Find keywords that indicate peacefulness(Present in meeting)
+        1. Delete Sri Lanka, enlarge our country target to 16(8 vs 8), shown in NewsSource Readme
   
    ##### Future work
-        1. Find Reason for such high accuracy, improve methods to find keywords.
-
-<!-- ##### Data Source:
-
- [India](https://timesofindia.indiatimes.com/archive.cms),[~~Afghanistan~~](https://www.eastview.com/resources/gpa/afghan-central-press/),[Australia,Canada&UK](https://lil.nlp.cornell.edu/newsroom/explore/index.html),[Iran](https://www.tehrantimes.com/archive),[Nigeria](https://archive-it.org/collections/11796),[Sri Lanka](https://www.sundaytimes.lk/210110/archive/),[Finland](https://www.dailyfinland.fi/archive),[UK](https://www.independent.co.uk/archive),[Canada](https://www.thestar.com/archive.html),[Ireland](https://www.sundayworld.com/archive/cnt),[Nigeria](https://www.thenigerianvoice.com/archive/),[Uganda](https://www.independent.co.ug/all-news/),[Norway](https://www.newsinenglish.no/2022/10/07/),[Zimbabwe](https://bulawayo24.com/index-id-archive.html) -->
