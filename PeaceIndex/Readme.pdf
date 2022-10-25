@@ -1,0 +1,37 @@
+To define High-Peace and Low-Peace Countries, we have referred to 5 indexes: 
+  Global Peace Index (GPI), Positive Peace Index (PPI), Human Development Index (HDI),World Happiness Index (WHI),Fragile States Index (FSI) for 137 countries, 
+and try to define our own peace indexes.
+
+Briefly calculating the correlation matrix bewteen five indexes:
+
+     WHI   HDI   FSI   PPI   GPI
+WHI   1    0.79  0.81  0.78  0.57
+HDI  0.79   1    0.86  0.85  0.58
+FSI  0.81  0.86   1    0.96  0.80
+PPI  0.78  0.85  0.96    1   0.74
+GPI  0.57  0.58  0.8   0.74   1
+
+It is easy to find these indexes are highly correlated.
+
+There are two basic unsupervised learning methods: Principle Component Analysis and K-means. 
+Since different indexes may have different variation and PCA can help us directly reach a single index intuitively，we choose to apply PCA.
+
+It turns out that the singular values of PCA are [557 172 120 100 48], 
+the explained variance ratio are [0.846 0.081 0.04 0.03 0.01]
+
+It is valid to use the first component of PCA to represent peace index, which is:
+peace_index = -(0.36*WHI+0.51*HDI+0.51*FSI+0.50*PPI+0.32*GPI)
+
+To make this more readable, we have done some rescaled work(multiple (-1), using min-max to make the index range from 0 to 100)
+The result is presented in peace_index_pca.xlsx.
+
+We divide the countries into 3 groups: High Peace, Medium Peace, Low Peace and choose 16 countries(8 from High Peace, 8 from Low peace):
+  High Peace        Low Peace
+  Finland           Iran
+  Norway            Gambia
+  Ireland           India
+  Canada            Libya
+  Australia         Uganda
+  Singapore         Pakistan
+  UK                Nigeria
+  France            Zimbabwe
