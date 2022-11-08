@@ -1,7 +1,23 @@
-Function pos_tag(for tagging part of speech) in python nltk library is not perfect: it depends on context. 
+We are able to lemmatize the words, but it's hard for us to know the part of speech of each word(pretty funny).
 
-What's more, the part of speech of a certain word can be diverse. 
+To lemmatize the word, we just need to claim that the word is noun for the first time, and claim that the word is verb for the first time.
+Code looks like:
+                word = WordNetLemmatizer(word,pos='n')
+                word = WordNetLemmatizer(word,pos='v')
+The WordNetLemmatizer can correctly lemmatize our word if one of our claim is right.      
+            
+However, the part of speech of a certain word can be diverse. 
+Function pos_tag(for tagging part of speech) in python nltk library is not perfect: it partically depends on the context.
+eg.
+pos_tag(['I','will','teenager','you'])---> returns [('I', 'PRP'), ('will', 'MD'), ('teenager', 'VB'), ('you', 'PRP')]
+pos_tag(['teenager'])---> returns [('teenager', 'NN')]
+
 Empirically speaking, pos_tag function tends to tag words as Noun, and the words with suffix -ed and -ing as Verb(VBD/VBG)
+eg.
+pos_tag(['walk'])---> returns [('walk', 'NN')]
+pos_tag(['owing'])---> returns [('owing', 'VBG')]
+pos_tag(['held'])---> returns [('held', 'NN')]
+
 It's actually pretty hard to classify the words without their context.
 
 One possible way to deal with this is pos_tag the words in raw context and concat the words with their label,
