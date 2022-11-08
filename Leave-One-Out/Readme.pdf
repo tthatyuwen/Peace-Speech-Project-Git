@@ -1,0 +1,10 @@
+Function pos_tag(for tagging part of speech) in python nltk library is not perfect: it depends on context. 
+
+What's more, the part of speech of a certain word can be diverse. 
+Empirically speaking, pos_tag function tends to tag words as Noun, and the words with suffix -ed and -ing as Verb(VBD/VBG)
+It's actually pretty hard to classify the words without their context.
+
+One possible way to deal with this is pos_tag the words in raw context and concat the words with their label,
+eg. pos_tag(['walk'])=('walk','verb')--->replace the word with walk_verb. The problem is that: shouldn't we treat walk_noun and walk_verb as one token?
+
+Another easier way is to calculate the number of times that a certain word appears as n/v/adj, and use majority vote to define the part of speech as a whole.
