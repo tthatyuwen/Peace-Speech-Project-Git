@@ -1,6 +1,6 @@
 # Peace Speech Project
 
-## 10/11-10/18
+## 11/1-11/8
 
 #### Social Media Group (Yuwen Zhang, Ziheng Ru):
   ##### Work Summary
@@ -24,7 +24,17 @@
 
 
 #### News Group ( Yibo Chen & Pinyi Yang & Xinfu Su & Hongou Liu): 
-  ##### Work Summary
-        1. Delete Sri Lanka, enlarge our country target to 16(8 vs 8), shown in NewsSource Readme
+  ##### Work Summary:
+        LOO model: Under text without lemmatizing, verbs in neg(unpeaceful) group are more likely to have suffix -ed and -ing;
+        however, words in pos(peaceful) are more likely to be original or third person singular form. This phenomenon remains even for the first 400+400 feature words in both groups. 
+        I have checked the feature words from Oliver(100+100), this phenomenon remains, and it interesting that our feature words are pretty much different.(Mainly because I chose leave one out)
+        Intersection between Oliver’s peace group(100 words) and LOO 1000 words intersection are 19 words(Peace Group) and 21 words(Less Peace Group)
+|-ed/-ing suffix|Peace Group|Less Peace Group|
+|---|---|---|
+|LOO 300 words intersection|8/101(8%)|38/90(42%)|
+|LOO 1000 words intersection|43/414(12.3%)|125/398(28.6%)|
+|Oliver Bert 100 words|5/100(5%)|46/100(46%)|
+        For lemmatized text, result shows in ./Leave-One-Out/Keywords_lemma.pdf
+        Failed to use KNN/PCA/T-SNE,Use LDA to select words from LOO 1000 words intersection under lemmatized text, choose top 50 words, result shows in ./Leave-One-Out/lda_keywords_lemma_1000.pdf 
   
    ##### Future work
